@@ -1,0 +1,152 @@
+-- phpMyAdmin SQL Dump
+-- version 3.5.4
+-- http://www.phpmyadmin.net
+--
+-- 主机: localhost:3306
+-- 生成日期: 2012 年 12 月 28 日 18:27
+-- 服务器版本: 5.5.28-0ubuntu0.12.10.2
+-- PHP 版本: 5.4.6-1ubuntu1.1
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+--
+-- 数据库: `gw`
+--
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `documents`
+--
+
+CREATE TABLE IF NOT EXISTS `documents` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `group_id` int(11) NOT NULL,
+  `group_id2` int(11) NOT NULL,
+  `date_added` datetime NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `content` text NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
+
+--
+-- 转存表中的数据 `documents`
+--
+
+INSERT INTO `documents` (`id`, `group_id`, `group_id2`, `date_added`, `title`, `content`) VALUES
+(1, 1, 5, '2012-12-28 18:05:16', 'test one', 'this is my test document number one. also checking search within phrases.'),
+(2, 1, 6, '2012-12-28 18:05:16', 'test two', 'this is my test document number two'),
+(3, 2, 7, '2012-12-28 18:05:16', 'another doc', 'this is another group'),
+(4, 2, 8, '2012-12-28 18:05:16', 'doc number four', 'this is to test groups');
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `gw_image`
+--
+
+CREATE TABLE IF NOT EXISTS `gw_image` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  `url` varchar(255) NOT NULL,
+  `description` varchar(255) DEFAULT NULL,
+  `img_height` mediumint(8) unsigned NOT NULL,
+  `created` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=52 ;
+
+--
+-- 转存表中的数据 `gw_image`
+--
+
+INSERT INTO `gw_image` (`id`, `name`, `url`, `description`, `img_height`, `created`) VALUES
+(1, '128282289355587870_tmBgOJMV_b.jpg', 'upload/50dbe889a4cf9/128282289355587870_tmBgOJMV_b.jpg', NULL, 279, 1356589194),
+(2, '192599321533793218_mTMFeJZL_b.jpg', 'upload/50dbe88a53cb2/192599321533793218_mTMFeJZL_b.jpg', NULL, 233, 1356589195),
+(3, '212091463671642778_rcQf4yTV_b.jpg', 'upload/50dbe88b1cef8/212091463671642778_rcQf4yTV_b.jpg', NULL, 250, 1356589195),
+(4, '280067670548474626_TKmqNIZQ_b.jpg', 'upload/50dbe88be0c68/280067670548474626_TKmqNIZQ_b.jpg', NULL, 108, 1356589196),
+(5, '154177987213663086_WvaZZgH4_b.jpg', 'upload/50dbe88c8683d/154177987213663086_WvaZZgH4_b.jpg', NULL, 288, 1356589198),
+(6, '189432728046604751_qHtaQTNd_b.jpg', 'upload/50dbe88e96ff5/189432728046604751_qHtaQTNd_b.jpg', NULL, 297, 1356589199),
+(7, '75998312432522298_hqkC3F7j_b.jpg', 'upload/50dbe89ca281a/75998312432522298_hqkC3F7j_b.jpg', NULL, 288, 1356589213),
+(8, '386605949231679990_KEW2mpLV_b.jpg', 'upload/50dbe89d72019/386605949231679990_KEW2mpLV_b.jpg', NULL, 289, 1356589214),
+(9, '64668944619777111_bPrLfLxP_b.jpg', 'upload/50dbe89e3eecb/64668944619777111_bPrLfLxP_b.jpg', NULL, 140, 1356589214),
+(10, '121667627402711947_ERyokgak_b.jpg', 'upload/50dbe89ed7d7c/121667627402711947_ERyokgak_b.jpg', NULL, 138, 1356589215),
+(11, '156429787028706739_kSlksV6B_b.jpg', 'upload/50dbe89f68181/156429787028706739_kSlksV6B_b.jpg', NULL, 269, 1356589216),
+(12, '519602875727513895_MUaRXRGP_b.jpg', 'upload/50dbe8a031236/519602875727513895_MUaRXRGP_b.jpg', NULL, 261, 1356589216),
+(13, '79868593361805434_vTZKxHQe_b.jpg', 'upload/50dbe88f629a3/79868593361805434_vTZKxHQe_b.jpg', NULL, 254, 1356589219),
+(14, '141511613261399155_4g7WGaLv_b.jpg', 'upload/50dbe8a0ee139/141511613261399155_4g7WGaLv_b.jpg', NULL, 173, 1356589219),
+(15, '235946467947501821_rFIEfMUy_b.jpg', 'upload/50dbe8a391e5a/235946467947501821_rFIEfMUy_b.jpg', NULL, 143, 1356589220),
+(16, '270286415106485937_fESW1uyR_b.jpg', 'upload/50dbe8a4301e1/270286415106485937_fESW1uyR_b.jpg', NULL, 192, 1356589233),
+(17, '110760472056116455_m2VOcc9w_b.jpg', 'upload/50dbe8b201315/110760472056116455_m2VOcc9w_b.jpg', NULL, 249, 1356589234),
+(18, '229402174739719170_dtwRydOa_b.jpg', 'upload/50dbe8d1f0aa7/229402174739719170_dtwRydOa_b.jpg', NULL, 256, 1356589272),
+(19, '153263193538744111_t1w5LMXP_b.jpg', 'upload/50dbe8d844481/153263193538744111_t1w5LMXP_b.jpg', NULL, 137, 1356589275),
+(20, '8233211790290981_Vlg5TIK2_b.jpg', 'upload/50dbe8db6de06/8233211790290981_Vlg5TIK2_b.jpg', NULL, 268, 1356589276),
+(21, '123356477263486370_803hfFY8_b.jpg', 'upload/50dbe8dc887a7/123356477263486370_803hfFY8_b.jpg', NULL, 255, 1356589277),
+(22, '354377064398364381_7dcqFFYx_b.jpg', 'upload/50dbe8dd57c99/354377064398364381_7dcqFFYx_b.jpg', NULL, 288, 1356589277),
+(23, '91127592430303793_K3H5ihbw_b.jpg', 'upload/50dbe8ddebce1/91127592430303793_K3H5ihbw_b.jpg', NULL, 289, 1356589279),
+(24, '188799409348788831_spnUeaHV_b.jpg', 'upload/50dbe8dfe396b/188799409348788831_spnUeaHV_b.jpg', NULL, 298, 1356589280),
+(25, '173318285630753537_vL51sdL3_b.jpg', 'upload/50dbe8e0bc958/173318285630753537_vL51sdL3_b.jpg', NULL, 205, 1356589283),
+(26, '256564509993331687_hTVUSNOG_b.jpg', 'upload/50dbe8e3dcaa6/256564509993331687_hTVUSNOG_b.jpg', NULL, 260, 1356589284),
+(27, '64457838387715584_QUa8Kmbx_b.jpg', 'upload/50dbe8e4e2de3/64457838387715584_QUa8Kmbx_b.jpg', NULL, 273, 1356589287),
+(28, '11892386486573701_XHYe0IK1_b.jpg', 'upload/50dbe8e80cb20/11892386486573701_XHYe0IK1_b.jpg', NULL, 192, 1356589288),
+(29, '113786328055042819_VSL8dwQ3_b.jpg', 'upload/50dbe8e8c9d55/113786328055042819_VSL8dwQ3_b.jpg', NULL, 192, 1356589289),
+(30, '114419646753253637_ddTBghoq_b.jpg', 'upload/50dbe8e992e4f/114419646753253637_ddTBghoq_b.jpg', NULL, 240, 1356589297),
+(31, '242138917435282244_4OY9v3yv_b.jpg', 'upload/50dbe8f14e4af/242138917435282244_4OY9v3yv_b.jpg', NULL, 140, 1356589297),
+(32, '152137293632421313_vG8LGQt1_b.jpg', 'upload/50dbe8f1e2a24/152137293632421313_vG8LGQt1_b.jpg', NULL, 255, 1356589298),
+(33, '182888434837230403_z03R91J3_b.jpg', 'upload/50dbe8f2b9f64/182888434837230403_z03R91J3_b.jpg', NULL, 244, 1356589299),
+(34, '98938523034714787_hfTjsrpi_b.jpg', 'upload/50dbe8f39116f/98938523034714787_hfTjsrpi_b.jpg', NULL, 378, 1356589300),
+(35, '205969382928428798_ePRCcgHu_b.jpg', 'upload/50dbe8f437df2/205969382928428798_ePRCcgHu_b.jpg', NULL, 226, 1356589300),
+(36, '143693044331251866_n1GQzRqa_b.jpg', 'upload/50dbe8f4e4547/143693044331251866_n1GQzRqa_b.jpg', NULL, 287, 1356589301),
+(37, '157626055679030603_Z62wGEl7_b.jpg', 'upload/50dbe8f5ad5c6/157626055679030603_Z62wGEl7_b.jpg', NULL, 143, 1356589302),
+(38, '247979523203814265_1D7JL5ov_b.jpg', 'upload/50dbe8f64c38d/247979523203814265_1D7JL5ov_b.jpg', NULL, 192, 1356589302),
+(39, '104145810103119401_K9KTCmlD_b.jpg', 'upload/50dbe8f6e2bda/104145810103119401_K9KTCmlD_b.jpg', NULL, 144, 1356589303),
+(40, '128282289355587870_tmBgOJMV_b.jpg', 'upload/50dbe933a1af0/128282289355587870_tmBgOJMV_b.jpg', NULL, 279, 1356589364),
+(41, '192599321533793218_mTMFeJZL_b.jpg', 'upload/50dbe93447e1d/192599321533793218_mTMFeJZL_b.jpg', NULL, 233, 1356589365),
+(42, '212091463671642778_rcQf4yTV_b.jpg', 'upload/50dbe93516d06/212091463671642778_rcQf4yTV_b.jpg', NULL, 250, 1356589365),
+(43, '280067670548474626_TKmqNIZQ_b.jpg', 'upload/50dbe935dd33c/280067670548474626_TKmqNIZQ_b.jpg', NULL, 108, 1356589366),
+(44, '154177987213663086_WvaZZgH4_b.jpg', 'upload/50dbe93688e5e/154177987213663086_WvaZZgH4_b.jpg', NULL, 288, 1356589368),
+(45, '189432728046604751_qHtaQTNd_b.jpg', 'upload/50dbe938a006f/189432728046604751_qHtaQTNd_b.jpg', NULL, 297, 1356589369),
+(46, '92323861082013792_KJ7gpocW_b.jpg', 'upload/50dbe9532e2f4/92323861082013792_KJ7gpocW_b.jpg', NULL, 134, 1356589398),
+(47, '242068548691512151_amEyCisr_b.jpg', 'upload/50dbe9569864a/242068548691512151_amEyCisr_b.jpg', NULL, 229, 1356589400),
+(48, '149392912609759753_fNdATlPD_b.jpg', 'upload/50dbe958b28fa/149392912609759753_fNdATlPD_b.jpg', NULL, 252, 1356589401),
+(49, '75646468710498321_JtVJFj9W_b.jpg', 'upload/50dbe959280e1/75646468710498321_JtVJFj9W_b.jpg', NULL, 213, 1356589401),
+(50, '195625177534524229_f49nbCs1_b.jpg', 'upload/50dbe959e9022/195625177534524229_f49nbCs1_b.jpg', NULL, 128, 1356589402),
+(51, '215680269624225523_03gzaDtF_b.jpg', 'upload/50dbe95ab6f5b/215680269624225523_03gzaDtF_b.jpg', NULL, 250, 1356589403);
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `tags`
+--
+
+CREATE TABLE IF NOT EXISTS `tags` (
+  `docid` int(11) NOT NULL,
+  `tagid` int(11) NOT NULL,
+  UNIQUE KEY `docid` (`docid`,`tagid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- 转存表中的数据 `tags`
+--
+
+INSERT INTO `tags` (`docid`, `tagid`) VALUES
+(1, 1),
+(1, 3),
+(1, 5),
+(1, 7),
+(2, 2),
+(2, 4),
+(2, 6),
+(3, 15),
+(4, 7),
+(4, 40);
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

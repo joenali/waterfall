@@ -11,6 +11,10 @@
         <script src="/gw/source/js/jquery-ui.js" type="text/javascript" charset="utf-8"></script>
         <script src="/gw/source/js/plugin/jquery.form.js" type="text/javascript" charset="utf-8"></script>
         <script src="/gw/source/js/plugin/jquery.jcarousel.js" type="text/javascript" charset="utf-8"></script>
+        <script src="/gw/source/js/plugin/jalert.js" type="text/javascript" charset="utf-8"></script>
+        <script src="/gw/source/js/plugin/other1.js" type="text/javascript" charset="utf-8"></script>
+        <script src="/gw/source/js/plugin/jquery.pageless.min.js" type="text/javascript" charset="utf-8"></script>
+
         <script src="/gw/source/js/plugin/jquery.tipsy.js" type="text/javascript" charset="utf-8"></script>
         <script src="/gw/source/js/plugin/underscore-min.js" type="text/javascript" charset="utf-8"></script>
         <script src="/gw/source/js/plugin/backbone-min.js" type="text/javascript" charset="utf-8"></script>

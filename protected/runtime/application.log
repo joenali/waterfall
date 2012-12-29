@@ -1,0 +1,223 @@
+2012/12/27 09:36:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /var/www/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('gii')
+#1 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/gw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gw/index.php?r=gii
+---
+2012/12/27 11:35:57 [error] [php] mkdir(): Permission denied (/var/www/gw/protected/controllers/ListController.php:24)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#1 /var/www/yii/framework/web/CController.php(287): ListController->runAction()
+#2 /var/www/yii/framework/web/CController.php(266): ListController->runActionWithFilters()
+#3 /var/www/yii/framework/web/CWebApplication.php(283): ListController->run()
+#4 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#5 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/gw/index.php(13): CWebApplication->run()
+REQUEST_URI=/gw/index.php?r=list/save
+in /var/www/gw/protected/controllers/ListController.php (24)
+in /var/www/gw/index.php (13)
+2012/12/27 11:36:05 [error] [php] mkdir(): Permission denied (/var/www/gw/protected/controllers/ListController.php:24)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#1 /var/www/yii/framework/web/CController.php(287): ListController->runAction()
+#2 /var/www/yii/framework/web/CController.php(266): ListController->runActionWithFilters()
+#3 /var/www/yii/framework/web/CWebApplication.php(283): ListController->run()
+#4 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#5 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/gw/index.php(13): CWebApplication->run()
+REQUEST_URI=/gw/index.php?r=list/save
+in /var/www/gw/protected/controllers/ListController.php (24)
+in /var/www/gw/index.php (13)
+2012/12/27 11:56:27 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'description' cannot be null. The SQL statement executed was: INSERT INTO `gw_image` (`name`, `url`, `description`, `created`) VALUES (:name, :url, :description, :created).
+in /var/www/gw/protected/controllers/ListController.php (37)
+in /var/www/gw/index.php (13)
+2012/12/27 11:56:27 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'description' cannot be null. The SQL statement executed was: INSERT INTO `gw_image` (`name`, `url`, `description`, `created`) VALUES (:name, :url, :description, :created)' in /var/www/yii/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /var/www/yii/framework/db/CDbCommand.php(1178): CDbCommand->execute(Array)
+#1 /var/www/gw/protected/controllers/ListController.php(37): CDbCommand->insert('gw_image', Array)
+#2 /var/www/yii/framework/web/actions/CInlineAction.php(50): ListController->actionSave()
+#3 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii/framework/web/CWebApplication.php(283): CController->run('save')
+#7 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('list/save')
+#8 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/gw/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/gw/index.php?r=list/save
+HTTP_REFERER=http://localhost/gw/index.php?r=list/index
+---
+2012/12/27 12:02:29 [error] [php] readfile(http://media-cache0.pinterest.com/upload/149392912609759753_fNdATlPD_b.jpg): failed to open stream: HTTP request failed! HTTP/1.0 408 Request Time-out
+ (/var/www/gw/protected/controllers/ListController.php:58)
+Stack trace:
+#0 /var/www/yii/framework/web/actions/CInlineAction.php(50): ListController->actionSave()
+#1 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /var/www/yii/framework/web/CController.php(287): ListController->runAction()
+#3 /var/www/yii/framework/web/CController.php(266): ListController->runActionWithFilters()
+#4 /var/www/yii/framework/web/CWebApplication.php(283): ListController->run()
+#5 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /var/www/gw/index.php(13): CWebApplication->run()
+REQUEST_URI=/gw/index.php?r=list/save
+in /var/www/gw/protected/controllers/ListController.php (58)
+in /var/www/gw/protected/controllers/ListController.php (31)
+in /var/www/gw/index.php (13)
+2012/12/27 12:04:02 [error] [php] readfile(http://media-cache0.pinterest.com/upload/114419646753253637_ddTBghoq_b.jpg): failed to open stream: HTTP request failed! HTTP/1.0 408 Request Time-out
+ (/var/www/gw/protected/controllers/ListController.php:58)
+Stack trace:
+#0 /var/www/yii/framework/web/actions/CInlineAction.php(50): ListController->actionSave()
+#1 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /var/www/yii/framework/web/CController.php(287): ListController->runAction()
+#3 /var/www/yii/framework/web/CController.php(266): ListController->runActionWithFilters()
+#4 /var/www/yii/framework/web/CWebApplication.php(283): ListController->run()
+#5 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /var/www/gw/index.php(13): CWebApplication->run()
+REQUEST_URI=/gw/index.php?r=list/save
+in /var/www/gw/protected/controllers/ListController.php (58)
+in /var/www/gw/protected/controllers/ListController.php (31)
+in /var/www/gw/index.php (13)
+2012/12/27 12:05:01 [error] [php] readfile(http://media-cache-lt0.pinterest.com/upload/153263193538744111_t1w5LMXP_b.jpg): failed to open stream: HTTP request failed!  (/var/www/gw/protected/controllers/ListController.php:58)
+Stack trace:
+#0 /var/www/yii/framework/web/actions/CInlineAction.php(50): ListController->actionSave()
+#1 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /var/www/yii/framework/web/CController.php(287): ListController->runAction()
+#3 /var/www/yii/framework/web/CController.php(266): ListController->runActionWithFilters()
+#4 /var/www/yii/framework/web/CWebApplication.php(283): ListController->run()
+#5 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /var/www/gw/index.php(13): CWebApplication->run()
+REQUEST_URI=/gw/index.php?r=list/save
+in /var/www/gw/protected/controllers/ListController.php (58)
+in /var/www/gw/protected/controllers/ListController.php (31)
+in /var/www/gw/index.php (13)
+2012/12/27 14:13:10 [error] [php] readfile(http://media-cache-ec6.pinterest.com/upload/121667627402711947_ERyokgak_b.jpg): failed to open stream: Connection timed out (/var/www/gw/protected/controllers/ListController.php:70)
+Stack trace:
+#0 /var/www/yii/framework/web/actions/CInlineAction.php(50): ListController->actionSave()
+#1 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /var/www/yii/framework/web/CController.php(287): ListController->runAction()
+#3 /var/www/yii/framework/web/CController.php(266): ListController->runActionWithFilters()
+#4 /var/www/yii/framework/web/CWebApplication.php(283): ListController->run()
+#5 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /var/www/gw/index.php(13): CWebApplication->run()
+REQUEST_URI=/gw/index.php?r=list/save
+in /var/www/gw/protected/controllers/ListController.php (70)
+in /var/www/gw/protected/controllers/ListController.php (43)
+in /var/www/gw/index.php (13)
+2012/12/27 14:13:17 [error] [php] readfile(http://media-cache0.pinterest.com/upload/270286415106485937_fESW1uyR_b.jpg): failed to open stream: HTTP request failed! HTTP/1.0 408 Request Time-out
+ (/var/www/gw/protected/controllers/ListController.php:70)
+Stack trace:
+#0 /var/www/yii/framework/web/actions/CInlineAction.php(50): ListController->actionSave()
+#1 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /var/www/yii/framework/web/CController.php(287): ListController->runAction()
+#3 /var/www/yii/framework/web/CController.php(266): ListController->runActionWithFilters()
+#4 /var/www/yii/framework/web/CWebApplication.php(283): ListController->run()
+#5 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /var/www/gw/index.php(13): CWebApplication->run()
+REQUEST_URI=/gw/index.php?r=list/save
+in /var/www/gw/protected/controllers/ListController.php (70)
+in /var/www/gw/protected/controllers/ListController.php (43)
+in /var/www/gw/index.php (13)
+2012/12/27 14:18:12 [error] [php] readfile(http://media-cache-ec6.pinterest.com/upload/121667627402711947_ERyokgak_b.jpg): failed to open stream: Connection timed out (/var/www/gw/protected/controllers/ListController.php:72)
+Stack trace:
+#0 /var/www/yii/framework/web/actions/CInlineAction.php(50): ListController->actionSave()
+#1 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /var/www/yii/framework/web/CController.php(287): ListController->runAction()
+#3 /var/www/yii/framework/web/CController.php(266): ListController->runActionWithFilters()
+#4 /var/www/yii/framework/web/CWebApplication.php(283): ListController->run()
+#5 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /var/www/gw/index.php(13): CWebApplication->run()
+REQUEST_URI=/gw/index.php?r=list/save
+in /var/www/gw/protected/controllers/ListController.php (72)
+in /var/www/gw/protected/controllers/ListController.php (44)
+in /var/www/gw/index.php (13)
+2012/12/27 14:19:53 [error] [php] readfile(http://media-cache-ec6.pinterest.com/upload/252694229062629676_FHrCOxB7_b.jpg): failed to open stream: Connection timed out (/var/www/gw/protected/controllers/ListController.php:72)
+Stack trace:
+#0 /var/www/yii/framework/web/actions/CInlineAction.php(50): ListController->actionSave()
+#1 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /var/www/yii/framework/web/CController.php(287): ListController->runAction()
+#3 /var/www/yii/framework/web/CController.php(266): ListController->runActionWithFilters()
+#4 /var/www/yii/framework/web/CWebApplication.php(283): ListController->run()
+#5 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /var/www/gw/index.php(13): CWebApplication->run()
+REQUEST_URI=/gw/index.php?r=list/save
+in /var/www/gw/protected/controllers/ListController.php (72)
+in /var/www/gw/protected/controllers/ListController.php (44)
+in /var/www/gw/index.php (13)
+2012/12/27 14:21:05 [error] [php] readfile(http://media-cache0.pinterest.com/upload/56646907782512479_jTCzeF9V_b.jpg): failed to open stream: HTTP request failed! HTTP/1.0 408 Request Time-out
+ (/var/www/gw/protected/controllers/ListController.php:72)
+Stack trace:
+#0 /var/www/yii/framework/web/actions/CInlineAction.php(50): ListController->actionSave()
+#1 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /var/www/yii/framework/web/CController.php(287): ListController->runAction()
+#3 /var/www/yii/framework/web/CController.php(266): ListController->runActionWithFilters()
+#4 /var/www/yii/framework/web/CWebApplication.php(283): ListController->run()
+#5 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /var/www/gw/index.php(13): CWebApplication->run()
+REQUEST_URI=/gw/index.php?r=list/save
+in /var/www/gw/protected/controllers/ListController.php (72)
+in /var/www/gw/protected/controllers/ListController.php (44)
+in /var/www/gw/index.php (13)
+2012/12/27 14:22:43 [error] [php] readfile(http://media-cache-ec6.pinterest.com/upload/252694229062629676_FHrCOxB7_b.jpg): failed to open stream: Connection timed out (/var/www/gw/protected/controllers/ListController.php:72)
+Stack trace:
+#0 /var/www/yii/framework/web/actions/CInlineAction.php(50): ListController->actionSave()
+#1 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /var/www/yii/framework/web/CController.php(287): ListController->runAction()
+#3 /var/www/yii/framework/web/CController.php(266): ListController->runActionWithFilters()
+#4 /var/www/yii/framework/web/CWebApplication.php(283): ListController->run()
+#5 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /var/www/gw/index.php(13): CWebApplication->run()
+REQUEST_URI=/gw/index.php?r=list/save
+in /var/www/gw/protected/controllers/ListController.php (72)
+in /var/www/gw/protected/controllers/ListController.php (44)
+in /var/www/gw/index.php (13)
+2012/12/27 14:23:15 [error] [php] readfile(http://media-cache0.pinterest.com/upload/79868593361805434_vTZKxHQe_b.jpg): failed to open stream: HTTP request failed! HTTP/1.0 408 Request Time-out
+ (/var/www/gw/protected/controllers/ListController.php:72)
+Stack trace:
+#0 /var/www/yii/framework/web/actions/CInlineAction.php(50): ListController->actionSave()
+#1 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /var/www/yii/framework/web/CController.php(287): ListController->runAction()
+#3 /var/www/yii/framework/web/CController.php(266): ListController->runActionWithFilters()
+#4 /var/www/yii/framework/web/CWebApplication.php(283): ListController->run()
+#5 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /var/www/gw/index.php(13): CWebApplication->run()
+REQUEST_URI=/gw/index.php?r=list/save
+in /var/www/gw/protected/controllers/ListController.php (72)
+in /var/www/gw/protected/controllers/ListController.php (44)
+in /var/www/gw/index.php (13)
+2012/12/27 14:34:49 [error] [exception.CException] exception 'CException' with message 'CDbCommand and its behaviors do not have a method or closure named "queryScale".' in /var/www/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/gw/protected/controllers/ListController.php(14): CComponent->__call('queryScale', Array)
+#1 /var/www/gw/protected/controllers/ListController.php(14): CDbCommand->queryScale()
+#2 /var/www/yii/framework/web/actions/CInlineAction.php(50): ListController->actionIndex()
+#3 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii/framework/web/CWebApplication.php(283): CController->run('index')
+#7 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('list/index')
+#8 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/gw/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/gw/index.php?r=list/index
+---
+2012/12/27 14:42:40 [error] [php] Missing argument 1 for CDbCommand::offset(), called in /var/www/gw/protected/controllers/ListController.php on line 24 and defined (/var/www/yii/framework/db/CDbCommand.php:1082)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#1 /var/www/yii/framework/web/CController.php(287): ListController->runAction()
+#2 /var/www/yii/framework/web/CController.php(266): ListController->runActionWithFilters()
+#3 /var/www/yii/framework/web/CWebApplication.php(283): ListController->run()
+#4 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#5 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/gw/index.php(13): CWebApplication->run()
+REQUEST_URI=/gw/index.php?r=list/index
+in /var/www/gw/protected/controllers/ListController.php (24)
+in /var/www/gw/index.php (13)

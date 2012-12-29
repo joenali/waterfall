@@ -19,7 +19,7 @@
         <script src="/gw/source/js/plugin/jquery.tipsy.js" type="text/javascript" charset="utf-8"></script>
         <script src="/gw/source/js/plugin/underscore-min.js" type="text/javascript" charset="utf-8"></script>
         <script src="/gw/source/js/plugin/backbone-min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="/gw/source/js/bundle_pin_6.js" type="text/javascript" charset="utf-8"></script>
+        <script src="/gw/source/js/bundle_pin_8.js" type="text/javascript" charset="utf-8"></script>
     </head>
 
     <body id="CategoriesBarPage">

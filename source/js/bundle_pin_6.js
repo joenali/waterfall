@@ -1392,6 +1392,7 @@ var BoardLayout = function() {
         }
     }
 } ();
+
 var LazyLoad = new(function() {
     var b = this,
     c = 0,
@@ -2893,6 +2894,7 @@ var Logout = function() {
         }
     }
 } ();
+
 var zoomCount = 0,
 Zoom = function() {
     return {

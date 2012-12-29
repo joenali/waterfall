@@ -14,6 +14,7 @@
         <script src="/gw/source/js/plugin/jalert.js" type="text/javascript" charset="utf-8"></script>
         <script src="/gw/source/js/plugin/other1.js" type="text/javascript" charset="utf-8"></script>
         <script src="/gw/source/js/plugin/jquery.pageless.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="/gw/source/js/plugin/other2.js" type="text/javascript" charset="utf-8"></script>
 
         <script src="/gw/source/js/plugin/jquery.tipsy.js" type="text/javascript" charset="utf-8"></script>
         <script src="/gw/source/js/plugin/underscore-min.js" type="text/javascript" charset="utf-8"></script>
